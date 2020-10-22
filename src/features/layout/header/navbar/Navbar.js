@@ -25,7 +25,7 @@ export function Navbar() {
             {
                 navBarItem.map((item, index) => {          
                     return ( 
-                        <Link className={styles.link} to={"/" + item}><li key={index}><button onClick={() => {handleChangeNav(item)}} className={styles.button + ' primaryColor'} >{item}</button></li></Link>  
+                        <Link key={index} className={styles.link} to={"/" + item}><li><button onClick={() => {handleChangeNav(item)}} className={styles.button + ' primaryColor'} >{item}</button></li></Link>  
                     ) 
                 })
             }

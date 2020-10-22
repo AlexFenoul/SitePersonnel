@@ -17,14 +17,31 @@ code {
   src: local('Polya'), url(./font/Polya/POLYA.otf) format('truetype');
 }
 
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto'), url(./font/Roboto/Roboto-Medium.ttf) format('truetype');
+}
+
 .primaryColor{
   color: rgba(242, 97, 34, 1)
+}
+
+.primaryBackground{
+  background-color: rgba(242, 97, 34, 1);
 }
 
 .secondaryColor{
     color: rgba(195, 38, 47, 1)
 }
 
+.secondaryBackground{
+  background-color: rgba(195, 38, 47, 1)
+}
+
 .tertiaryColor{
   color: rgba(241, 200, 2, 1)
+}
+
+.tertiaryBackground{
+  background-color: rgba(241, 200, 2, 1)
 }

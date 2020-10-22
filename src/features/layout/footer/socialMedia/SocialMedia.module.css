@@ -1,0 +1,13 @@
+.socialMedia{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 300px;
+}
+
+.logo{
+    width: 35px;
+    object-fit: fill;
+    padding: 8px;
+    border-radius: 15px;
+}

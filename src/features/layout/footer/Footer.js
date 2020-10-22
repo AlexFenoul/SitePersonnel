@@ -13,9 +13,9 @@ export function Footer() {
 
   return (
     <div className={styles.footer}>
-        <Contacts></Contacts>
-        <SocialMedia></SocialMedia>
-        <TwitterTimeline></TwitterTimeline>
+        <div className={styles.footerComponent}><Contacts></Contacts></div>
+        <div className={styles.footerComponent}><SocialMedia></SocialMedia></div>
+        <div className={styles.footerComponent}><TwitterTimeline></TwitterTimeline></div>
     </div>
   );
 }

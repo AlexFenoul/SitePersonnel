@@ -11,15 +11,18 @@ const socialMedias = useSelector(selectSocialMedia);
 
   return (
     <div className={styles.socialMedia}>
-        {
-            socialMedias.map((item, index) => {    
-                const path = require.context('../../../../images', true)
-                let img = path('./' + item.logo);   
-                return ( 
-                    <a key={item.id} href={item.url} target="_blank" rel="noreferrer noopener"><img  src={img} alt={item.name} className={styles.logo}/> </a>          
-                ) 
-            })
-        }
+        <h2>Social Media</h2>
+        <div>
+          {
+              socialMedias.map((item, index) => {    
+                  const path = require.context('../../../../images', true)
+                  let img = path('./' + item.logo);   
+                  return ( 
+                      <a key={item.id} href={item.url} target="_blank" rel="noreferrer noopener"><img  src={img} alt={item.name} className={styles.logo}/> </a>          
+                  ) 
+              })
+          }
+        </div>
     </div>
   );
 }
